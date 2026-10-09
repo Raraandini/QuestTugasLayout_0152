@@ -13,6 +13,8 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.res.colorResource
+import androidx.compose.foundation.Image
+import androidx.compose.ui.res.painterResource
 
 data class ProfileData(
     val nameRes: Int,
@@ -72,6 +74,11 @@ fun ProfileCard(profile: ProfileData) {
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = null,
+                modifier = Modifier.size(50.dp)
+            )
 
         }
 
