@@ -5,6 +5,10 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.material3.Text
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 
 data class ProfileData(
     val nameRes: Int,
@@ -28,6 +32,12 @@ fun MainScreen() {
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Spacer(modifier = Modifier.height(24.dp))
+        Text(
+            text = stringResource(id = R.string.title_tekinfo),
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold
+        )
 
     }
 }
