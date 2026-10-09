@@ -45,5 +45,11 @@ fun MainScreen() {
         )
         Spacer(modifier = Modifier.height(24.dp))
 
+        Text(
+            text = stringResource(id = R.string.copyright_text),
+            fontSize = 12.sp,
+            modifier = Modifier.padding(vertical = 8.dp)
+        )
+
     }
 }
