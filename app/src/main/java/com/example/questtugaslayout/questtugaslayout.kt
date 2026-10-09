@@ -1,6 +1,10 @@
 package com.example.questtugaslayout
 
 import androidx.compose.runtime.Composable
+import androidx.compose.foundation.layout.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 
 data class ProfileData(
     val nameRes: Int,
@@ -18,4 +22,12 @@ fun MainScreen() {
         ProfileData(R.string.name_iza, R.string.phone_iza, R.string.detail_iza, R.color.card_blue, R.color.text_dark),
         ProfileData(R.string.name_putri, R.string.phone_putri, R.string.detail_putri, R.color.card_green, R.color.text_dark)
     )
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+
+    }
 }
