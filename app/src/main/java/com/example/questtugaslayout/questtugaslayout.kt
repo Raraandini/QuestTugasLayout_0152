@@ -97,6 +97,11 @@ fun ProfileCard(profile: ProfileData) {
                         fontSize = 14.sp
                     )
                 }
+                Text(
+                    text = stringResource(id = profile.detailRes),
+                    color = colorResource(id = R.color.text_yellow),
+                    fontSize = 14.sp
+                )
 
             }
 
