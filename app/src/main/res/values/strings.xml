@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">questtugaslayout</string>
+    <string name="app_name">QuestTugasLayout_0152</string>
+    <string name="title_tekinfo">Teknologi Informasi</string>
+    <string name="subtitle_umy">Universitas Muhammadiyah Yogyakarta</string>
+    <string name="name_rara">Rara Andini Batrisyia</string>
+    <string name="phone_rara">0836739379</string>
+    <string name="detail_rara">Amurang, Manado</string>
+    <string name="name_salwa">Salwa Anjaini Futri Endsani</string>
+    <string name="phone_salwa">08123456789</string>
+    <string name="detail_salwa">Ciamis, Bekasi</string>
+    <string name="name_iza">Sukma Hawa Iza Ghazali</string>
+    <string name="phone_iza">085436874190</string>
+    <string name="detail_iza">Pemalang, Surabaya</string>
+    <string name="name_putri">Nur Zukhrufiyati Sartika Putri </string>
+    <string name="phone_putri">0855381829</string>
+    <string name="detail_putri">Tarahan, Lampung</string>
+    <string name="copyright_text">Copyright, 2026</string>
 </resources>
