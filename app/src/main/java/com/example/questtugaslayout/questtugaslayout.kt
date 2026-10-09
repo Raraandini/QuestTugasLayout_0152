@@ -79,6 +79,13 @@ fun ProfileCard(profile: ProfileData) {
                 contentDescription = null,
                 modifier = Modifier.size(50.dp)
             )
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(horizontal = 12.dp)
+            ) {
+
+            }
 
         }
 
