@@ -53,3 +53,8 @@ fun MainScreen() {
 
     }
 }
+
+@Composable
+fun ProfileCard(profile: ProfileData) {
+
+}
