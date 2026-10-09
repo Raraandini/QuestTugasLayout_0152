@@ -16,6 +16,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.foundation.Image
 import androidx.compose.ui.res.painterResource
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 
 data class ProfileData(
     val nameRes: Int,
@@ -55,7 +56,9 @@ fun MainScreen() {
             modifier = Modifier.weight(1f),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-
+            items(profiles) { profile ->
+                ProfileCard(profile)
+            }
         }
         Text(
             text = stringResource(id = R.string.copyright_text),
