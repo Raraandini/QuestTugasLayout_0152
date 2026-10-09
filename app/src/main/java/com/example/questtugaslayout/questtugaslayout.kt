@@ -84,6 +84,13 @@ fun ProfileCard(profile: ProfileData) {
                     .weight(1f)
                     .padding(horizontal = 12.dp)
             ) {
+                Text(
+                    text = stringResource(id = profile.nameRes),
+                    color = colorResource(id = profile.nameColorRes),
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp
+                )
+                
 
             }
 
