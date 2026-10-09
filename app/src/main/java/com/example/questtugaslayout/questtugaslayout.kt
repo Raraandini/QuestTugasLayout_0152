@@ -90,7 +90,13 @@ fun ProfileCard(profile: ProfileData) {
                     fontWeight = FontWeight.Bold,
                     fontSize = 18.sp
                 )
-                
+                profile.phoneRes?.let { phone ->
+                    Text(
+                        text = stringResource(id = phone),
+                        color = colorResource(id = R.color.text_cyan),
+                        fontSize = 14.sp
+                    )
+                }
 
             }
 
