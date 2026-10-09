@@ -9,3 +9,7 @@ data class ProfileData(
     val bgColorRes: Int,
     val nameColorRes: Int
 )
+
+@Composable
+fun MainScreen() {
+}
