@@ -38,6 +38,12 @@ fun MainScreen() {
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
         )
+        Text(
+            text = stringResource(id = R.string.subtitle_umy),
+            fontSize = 14.sp,
+            fontWeight = FontWeight.Medium
+        )
+        Spacer(modifier = Modifier.height(24.dp))
 
     }
 }
