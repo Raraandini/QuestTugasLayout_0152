@@ -15,6 +15,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.res.colorResource
 import androidx.compose.foundation.Image
 import androidx.compose.ui.res.painterResource
+import androidx.compose.foundation.lazy.LazyColumn
 
 data class ProfileData(
     val nameRes: Int,
@@ -50,7 +51,12 @@ fun MainScreen() {
             fontWeight = FontWeight.Medium
         )
         Spacer(modifier = Modifier.height(24.dp))
+        LazyColumn(
+            modifier = Modifier.weight(1f),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
 
+        }
         Text(
             text = stringResource(id = R.string.copyright_text),
             fontSize = 12.sp,
