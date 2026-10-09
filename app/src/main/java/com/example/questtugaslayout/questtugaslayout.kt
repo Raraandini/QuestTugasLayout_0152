@@ -9,6 +9,10 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.res.colorResource
 
 data class ProfileData(
     val nameRes: Int,
@@ -56,5 +60,11 @@ fun MainScreen() {
 
 @Composable
 fun ProfileCard(profile: ProfileData) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = colorResource(id = profile.bgColorRes))
+    ) {
 
+    }
 }
